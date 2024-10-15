@@ -37,9 +37,14 @@ def tui():
             print("Opcion no valida.")
 
 def calcular_funcion_cuadratica():
-    a = float(input("Ingrese el coeficiente de x^2: "))
-    b = float(input("Ingrese el coeficiente de x: "))
-    c = float(input("Ingrese el término independiente: "))
+    while True:
+        try:
+            a = float(input("Ingrese el coeficiente de x^2: "))
+            b = float(input("Ingrese el coeficiente de x: "))
+            c = float(input("Ingrese el término independiente: "))
+            break
+        except ValueError:
+            print("Por favor, ingrese solo números.")
 
     valores_x = [-2, -1, 0, 1, 2]
     valores_y = [a * x**2 + b * x + c for x in valores_x]
