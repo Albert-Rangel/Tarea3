@@ -22,9 +22,10 @@ def mostrar_titulo():
     print(banner)
 
 def tui():
-    os.system("cls")
+    os.system("cls|| clear")
     mostrar_titulo()
     while True:
+        
         print("1: Calcular Función Cuadrática")
         print("2: Salir")
         opcion = input("Ingrese la opcion deseada: ")
@@ -61,6 +62,7 @@ def calcular_funcion_cuadratica():
         plt.ylabel("Y")
         plt.grid(True)
         plt.show()
+        # os.system("cls|| clear")
 
 if __name__ == "__main__":
     tui()
