@@ -16,6 +16,8 @@ def mostrar_titulo():
     #           PROGRAMA           #
     #              DE              #
     #           CALCULO            #
+    #            FUNCION           #
+    #           CUADRATICA         #
     #                              #
     ################################
     """
